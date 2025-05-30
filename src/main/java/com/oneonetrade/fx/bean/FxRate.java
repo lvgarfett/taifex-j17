@@ -2,48 +2,48 @@ package com.oneonetrade.fx.bean;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CurrencyData {
+public class FxRate {
     @JsonProperty("Date")
-    private String date; // Storing as String for the "YYYYMMdd" format
+    private String date;
 
     @JsonProperty("USD/NTD")
-    private double usdNtd;
+    private String usdNtd;
 
     @JsonProperty("RMB/NTD")
-    private double rmbNtd;
+    private String rmbNtd;
 
     @JsonProperty("EUR/USD")
-    private double eurUsd;
+    private String eurUsd;
 
     @JsonProperty("USD/JPY")
-    private double usdJpy;
+    private String usdJpy;
 
     @JsonProperty("GBP/USD")
-    private double gbpUsd;
+    private String gbpUsd;
 
     @JsonProperty("AUD/USD")
-    private double audUsd;
+    private String audUsd;
 
     @JsonProperty("USD/HKD")
-    private double usdHkd;
+    private String usdHkd;
 
     @JsonProperty("USD/RMB")
-    private double usdRmb;
+    private String usdRmb;
 
     @JsonProperty("USD/ZAR")
-    private double usdZar;
+    private String usdZar;
 
     @JsonProperty("NZD/USD")
-    private double nzdUsd;
+    private String nzdUsd;
 
     // Default constructor (recommended for JSON deserialization)
-    public CurrencyData() {
+    public FxRate() {
     }
 
     // Constructor with all fields (optional, but convenient for creating objects)
-    public CurrencyData(String date, double usdNtd, double rmbNtd, double eurUsd, double usdJpy,
-                        double gbpUsd, double audUsd, double usdHkd, double usdRmb,
-                        double usdZar, double nzdUsd) {
+    public FxRate(String date, String usdNtd, String rmbNtd, String eurUsd, String usdJpy,
+                  String gbpUsd, String audUsd, String usdHkd, String usdRmb,
+                  String usdZar, String nzdUsd) {
         this.date = date;
         this.usdNtd = usdNtd;
         this.rmbNtd = rmbNtd;
@@ -67,83 +67,83 @@ public class CurrencyData {
         this.date = date;
     }
 
-    public double getUsdNtd() {
+    public String getUsdNtd() {
         return usdNtd;
     }
 
-    public void setUsdNtd(double usdNtd) {
+    public void setUsdNtd(String usdNtd) {
         this.usdNtd = usdNtd;
     }
 
-    public double getRmbNtd() {
+    public String getRmbNtd() {
         return rmbNtd;
     }
 
-    public void setRmbNtd(double rmbNtd) {
+    public void setRmbNtd(String rmbNtd) {
         this.rmbNtd = rmbNtd;
     }
 
-    public double getEurUsd() {
+    public String getEurUsd() {
         return eurUsd;
     }
 
-    public void setEurUsd(double eurUsd) {
+    public void setEurUsd(String eurUsd) {
         this.eurUsd = eurUsd;
     }
 
-    public double getUsdJpy() {
+    public String getUsdJpy() {
         return usdJpy;
     }
 
-    public void setUsdJpy(double usdJpy) {
+    public void setUsdJpy(String usdJpy) {
         this.usdJpy = usdJpy;
     }
 
-    public double getGbpUsd() {
+    public String getGbpUsd() {
         return gbpUsd;
     }
 
-    public void setGbpUsd(double gbpUsd) {
+    public void setGbpUsd(String gbpUsd) {
         this.gbpUsd = gbpUsd;
     }
 
-    public double getAudUsd() {
+    public String getAudUsd() {
         return audUsd;
     }
 
-    public void setAudUsd(double audUsd) {
+    public void setAudUsd(String audUsd) {
         this.audUsd = audUsd;
     }
 
-    public double getUsdHkd() {
+    public String getUsdHkd() {
         return usdHkd;
     }
 
-    public void setUsdHkd(double usdHkd) {
+    public void setUsdHkd(String usdHkd) {
         this.usdHkd = usdHkd;
     }
 
-    public double getUsdRmb() {
+    public String getUsdRmb() {
         return usdRmb;
     }
 
-    public void setUsdRmb(double usdRmb) {
+    public void setUsdRmb(String usdRmb) {
         this.usdRmb = usdRmb;
     }
 
-    public double getUsdZar() {
+    public String getUsdZar() {
         return usdZar;
     }
 
-    public void setUsdZar(double usdZar) {
+    public void setUsdZar(String usdZar) {
         this.usdZar = usdZar;
     }
 
-    public double getNzdUsd() {
+    public String getNzdUsd() {
         return nzdUsd;
     }
 
-    public void setNzdUsd(double nzdUsd) {
+    public void setNzdUsd(String nzdUsd) {
         this.nzdUsd = nzdUsd;
     }
 
