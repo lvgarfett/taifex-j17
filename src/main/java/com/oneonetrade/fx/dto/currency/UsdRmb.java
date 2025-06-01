@@ -1,4 +1,4 @@
-package com.oneonetrade.fx.bean;
+package com.oneonetrade.fx.dto.currency;
 
 public class UsdRmb {
 

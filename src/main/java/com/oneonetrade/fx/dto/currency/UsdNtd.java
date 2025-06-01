@@ -1,6 +1,4 @@
-package com.oneonetrade.fx.bean;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.oneonetrade.fx.dto.currency;
 
 public class UsdNtd {
     private String date;

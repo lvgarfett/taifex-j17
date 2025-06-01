@@ -1,4 +1,4 @@
-package com.oneonetrade.fx.api;
+package com.oneonetrade.fx.dto.api;
 
 public class ApiResponseFailed {
 
