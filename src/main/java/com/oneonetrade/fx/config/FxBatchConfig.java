@@ -39,7 +39,7 @@ public class FxBatchConfig {
     @Bean
     public Step chunkStep(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
         return new StepBuilder("chunkStep", jobRepository)
-                .<CollectionEntity, CollectionEntity>chunk(1, transactionManager)
+                .<CollectionEntity, CollectionEntity>chunk(100, transactionManager)
                 .reader(fxReader())
                 .processor(processor())
                 .writer(writer())
